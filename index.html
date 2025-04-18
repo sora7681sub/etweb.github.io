@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我がマッドサイエンティストの実験場！</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>狂気の実験場</h1>
+            <p>最高の知性が集う闇の実験室へようこそ...フハハハハ！</p>
+        </header>
+
+        <nav class="tabs">
+            <ul>
+                <li><a href="#" class="tab active" data-page="home">ホーム</a></li>
+                <li><a href="#" class="tab" data-page="tools">ツール</a></li>
+                <li><a href="#" class="tab" data-page="poems">ポエム</a></li>
+                <li><a href="#" class="tab" data-page="history">ET鯖の歴史</a></li>
+                <li><a href="#" class="tab" data-page="cheats">チート作り方</a></li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div id="home-content" class="page-content active">
+                <h2>狂気の主のポータルへようこそ！</h2>
+                <p>ここは我が最高傑作が集う実験場よ！タブからカテゴリを選んで、狂気の知識を啜るがよい！</p>
+                <div class="featured">
+                    <h3>注目の実験</h3>
+                    <div class="featured-items">
+                        <div class="featured-item">
+                            <h4>最新ツール</h4>
+                            <p>効率よく実験するための道具たち！</p>
+                            <a href="#" class="btn" data-page="tools">詳細を見る</a>
+                        </div>
+                        <div class="featured-item">
+                            <h4>最新ポエム</h4>
+                            <p>狂気の吟遊詩人による傑作たち！</p>
+                            <a href="#" class="btn" data-page="poems">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- タブコンテンツは別ページにロードされる -->
+            <div id="tools-content" class="page-content"></div>
+            <div id="poems-content" class="page-content"></div>
+            <div id="history-content" class="page-content"></div>
+            <div id="cheats-content" class="page-content"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 狂気の実験場 - すべての権利は闇に帰属する</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/antispam.js"></script>
+</body>
+</html>
